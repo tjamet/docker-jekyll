@@ -1,7 +1,6 @@
-FROM zot.jamet.me/docker-hub/library/ruby:2.6.10-alpine
+FROM zot.jamet.me/docker-hub/library/ruby:2.7.8-alpine
 
 RUN apk add --no-cache build-base && \
-    gem update --system 3.0.9 --no-document && \
     gem install --no-document rexml -v 3.2.5 && \
     gem install --no-document kramdown -v 2.4.0 && \
     gem install --no-document public_suffix -v 4.0.7 && \
