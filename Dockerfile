@@ -1,4 +1,4 @@
-FROM zot.jamet.me/docker-hub/library/ruby:3.1.7-alpine
+FROM zot.jamet.me/docker-hub/library/ruby:3.2.11-alpine
 
 RUN apk add --no-cache build-base && \
     gem install --no-document rexml -v 3.2.5 && \
