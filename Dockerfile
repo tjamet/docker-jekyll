@@ -1,4 +1,4 @@
-FROM zot.jamet.me/docker-hub/library/ruby:2.7.8-alpine
+FROM zot.jamet.me/docker-hub/library/ruby:3.0.7-alpine
 
 RUN apk add --no-cache build-base && \
     gem install --no-document rexml -v 3.2.5 && \
@@ -9,6 +9,7 @@ RUN apk add --no-cache build-base && \
     gem install --no-document listen -v 3.7.1 && \
     gem install --no-document jekyll-sass-converter -v 2.1.0 && \
     gem install --no-document i18n -v 1.14.8 && \
+    gem install --no-document webrick -v 1.9.2 && \
     gem install --no-document jekyll -v 4.2.2 && \
     apk del build-base && \
     apk add --no-cache libstdc++ libgcc && \
