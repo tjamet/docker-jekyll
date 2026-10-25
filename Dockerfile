@@ -1,4 +1,4 @@
-FROM zot.jamet.me/docker-hub/library/ruby:2.4.0-alpine
+FROM zot.jamet.me/docker-hub/library/ruby:2.5.9-alpine
 
 RUN apk add --no-cache build-base && \
     gem update --system 3.0.9 --no-document && \
