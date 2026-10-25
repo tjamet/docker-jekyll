@@ -10,7 +10,7 @@ RUN apk add --no-cache build-base && \
     gem install --no-document jekyll-sass-converter -v 2.1.0 && \
     gem install --no-document i18n -v 1.14.8 && \
     gem install --no-document webrick -v 1.9.2 && \
-    gem install --no-document jekyll -v 4.2.2 && \
+    gem install --no-document jekyll -v 4.3.4 && \
     apk del build-base && \
     apk add --no-cache libstdc++ libgcc && \
     mkdir -p /workdir
